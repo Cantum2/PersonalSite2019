@@ -42,7 +42,11 @@ export class ProjectsComponent implements OnInit {
     projectLink: 'https://etherradio.herokuapp.com/',
     github: 'https://github.com/Cantum2/WyoHack2018',
     image: '../../assets/img/wyohack.PNG'
-  }
+  },
+  // {name: 'This Website',
+
+
+  // }
   ]
   constructor() { }
 
