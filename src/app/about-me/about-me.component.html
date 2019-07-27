@@ -1,0 +1,69 @@
+<div style="margin-top: 5px; height: 100%;">
+    <h1 style="font-size: 70px; margin:0; text-align: center">About Me</h1>
+    <div layout="row" style="display:flex; justify-content: space-evenly; margin-top: 10px;">
+        <a href="https://github.com/Cantum2"><img flex="25" style="height: 100px; width: 100px; " src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+        <a href="https://www.linkedin.com/in/marcus-cantu-a0b569131/"><img flex="25" style="height: 100px; width: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
+        <a href="mailto: cantumarcus19@gmail.com"><img flex="25" style="height: 100px; width: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmPve6acbZWX7e2vDbabvXpW8O-uWhw2k3eToCsmIONJYoRHX"></a>
+    </div>
+    <div layout="row" style="display: flex; justify-content: left; margin-top: 10px; margin-left: 20px;">
+        <div flex="30" style="max-width: 35%;">
+            <figure style="margin-right: 0;">
+                <img class="roundedImg" src="../../assets/img/me.png">
+                <figcaption style="width: 70%; margin-right: 0; ">
+                    My name is Marcus Cantu. I am a Software Engineer and a Student. 
+                    I attend the University of Wyoming for Computer Science and am graduating May 2020. My hobbies include
+                    working on projects and going to the gym. 
+                </figcaption>
+            </figure>
+        </div>
+        <div>
+            <h2 style="text-align: center; font-size: 50px; margin-top: 5px; margin-bottom: 5px;">Skills</h2>
+            <mat-accordion #myaccordion="matAccordion" multi="true">
+                <mat-expansion-panel [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Languages
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-chip-list>
+                        <mat-chip *ngFor="let language of languages">{{language}}</mat-chip>
+                    </mat-chip-list>    
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Frameworks
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-chip-list>
+                        <mat-chip *ngFor="let framework of frameworks">{{framework}}</mat-chip>
+                    </mat-chip-list>  
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Databases
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-chip-list>
+                        <mat-chip *ngFor="let database of databases">{{database}}</mat-chip>
+                    </mat-chip-list>   
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Other Skills
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-chip-list>
+                        <mat-chip *ngFor="let other of others">{{other}}</mat-chip>
+                    </mat-chip-list>  
+                </mat-expansion-panel>
+            </mat-accordion>
+
+     
+         
+        </div>
+
+    </div>
+</div>

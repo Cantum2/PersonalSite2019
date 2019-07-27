@@ -1,0 +1,88 @@
+.projectWrapper {
+    display: flex; 
+    justify-content: center; 
+    height: 400px; 
+    width: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.projectContentLeft {
+    order: 1;
+    z-index: 2; 
+    max-width: 40%; 
+    flex: 60;
+}
+.projectContentRight {
+    order: 2;
+    z-index: 2; 
+    max-width: 40%; 
+    flex: 60;
+}
+
+
+.projectDescriptionLeft{
+    order: 1;
+    background-color: grey; 
+    border-radius: 3px; 
+    height: 80%; 
+    color:white; font-size: 15px; 
+    -webkit-box-shadow: 6px 4px 9px -2px rgba(0,0,0,0.38);
+    -moz-box-shadow: 6px 4px 9px -2px rgba(0,0,0,0.38);
+    box-shadow: 6px 4px 9px -2px rgba(0,0,0,0.38);
+    padding: 10px;
+}
+.projectContentLeft p {
+    text-align: left;
+}
+
+
+.projectDescriptionRight{
+    order: 2;
+    background-color: grey; 
+    border-radius: 3px; 
+    height: 80%; 
+    color:white; font-size: 15px; 
+    -webkit-box-shadow: -6px 4px 9px -2px rgba(0,0,0,0.38);
+    -moz-box-shadow: -6px 4px 9px -2px rgba(0,0,0,0.38);
+    box-shadow: -6px 4px 9px -2px rgba(0,0,0,0.38);
+    padding: 10px;
+}
+
+.projectContentRight p {
+    text-align: right;
+}
+
+.projectImageLeft {
+    order: 2;
+    margin-left: -2%; 
+    height: 100%;
+    flex: 40; 
+}
+.projectImageRight {
+    order: 1;
+    margin-right: -2%; 
+    height: 100%;
+    flex: 40; 
+}
+.projectImageFilter {
+    border-radius: 1%;
+
+    background-color: rgba(220,220,220, .6);
+    opacity: .7;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.projectImageFilter:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.roundedImage {
+    height: 100%;
+    width: 100%;
+    border-radius: 1%;
+}

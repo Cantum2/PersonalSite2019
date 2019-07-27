@@ -1,0 +1,20 @@
+/* :host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+} */
+@import url("https://fonts.googleapis.com/css?family=Play|Work+Sans");
+
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
