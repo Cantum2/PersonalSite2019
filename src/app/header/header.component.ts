@@ -27,7 +27,6 @@ export class HeaderComponent implements OnInit {
   }
 
   triggerClick(){
-    console.log(this.aboutMe)
     this.aboutMe.nativeElement.scrollIntoView(this.scrollBehavior);
   }
 
@@ -39,8 +38,10 @@ export class HeaderComponent implements OnInit {
         break;
       case 'experience':
         this.experience.nativeElement.scrollIntoView(this.scrollBehavior);
+        break;
       case 'projects':
         this.projects.nativeElement.scrollIntoView(this.scrollBehavior);
+        break;
       default:
         break;
     }
