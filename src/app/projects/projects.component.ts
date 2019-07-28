@@ -9,7 +9,7 @@ import { Project } from '../app.model';
 export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {name: 'Fitter', 
-    description: 'Fitter is software for the fitness industry.' +
+    description: '(Finalist in Fisher Innovation Launchpad for part of 120k in seed funding)---Fitter is software for the fitness industry.' +
     ' Fitter allows users to log meals, workouts, track progress, manage goals, pay and find trainers/gyms. ' + 
     ' As a trainer Fitter allows personal trainers to see real time info of each of their clients to allow more' +
     ' accurate fitness information. Fitter also has functionality for gyms to be able to manage their facility. ' + 
@@ -43,10 +43,14 @@ export class ProjectsComponent implements OnInit {
     github: 'https://github.com/Cantum2/WyoHack2018',
     image: '../../assets/img/wyohack.PNG'
   },
-  // {name: 'This Website',
-
-
-  // }
+  {name: 'This Website',
+  description: 'This project serves as a portfolio for people to get to know me a bit more as a developer and as a person. '+
+  ' It is also my first project utilizing AWS and is stored/hosted in an S3 bucket. `',
+  technologies: ['Angular 8', 'Angular Material', 'TypeScript'],
+  projectLink: 'http://marcuscantu.com',
+  github: 'https://github.com/Cantum2/PersonalSite2019',
+  image: '../../assets/img/personalSite.PNG'
+  }
   ]
   constructor() { }
 

@@ -4,5 +4,11 @@ export interface Project {
     technologies: string[];
     github?: string;
     projectLink?: string;
-    image?: any;
+    image: any;
+}
+
+export interface Person {
+    name:string;
+    age: number;
+    dob?: string;
 }
