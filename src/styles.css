@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-
+/* https://visme.co/blog/website-color-schemes/   16*/
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.secondaryButton{
+    color: white;
+    background-color: #116466 !important; 
+    border-radius: 3px;
+    font-size: 14px;
+    text-transform: none;
+    text-align: center;
+    min-width: 88px;
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+}

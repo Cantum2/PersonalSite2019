@@ -1,23 +1,30 @@
 
 
 <div class="divTop background">
-        <div class="divTop filter" style="text-align: center;">
-                <div class="center" style="opacity: 1;">
-                        <h1 style="font-size: 150px; margin:0;">Marcus Cantu</h1>
-                        <button mat-button class="mat-stroked-button " (click)="triggerClick()" style="width:50%;">Explore</button>
-                </div>
-        </div>
+	<div class="divTop filter" style="text-align: center;">
+		<div class="center childDiv">
+			<h1 style="font-size: 150px; margin:0;">Marcus Cantu</h1>
+			<p >
+				My name is Marcus Cantu. I am a Software Engineer and a Student. 
+				I attend the University of Wyoming for Computer Science and am graduating May 2020. My hobbies include
+				working on projects and going to the gym. 
+			</p>
+			<button mat-button class="secondaryButton" (click)="triggerClick()" style="width:50%; opacity: 1;">Explore</button>
+		</div>
+	</div>
 </div>
 
-<div #aboutMe style="height: 100%;">
-        <app-about-me></app-about-me>
+<div #aboutMe class="background2" style="height: 100%;">
+	<div class="filter">
+			<app-about-me></app-about-me>
+	</div>
 </div>
 
 <div #experience style="height: 100%; margin-top: 10px;">
-        <app-work-experience></app-work-experience>
+	<app-work-experience></app-work-experience>
 </div>
 
 
 <div #projects style="height: 100%; margin-top: 10px;">
-        <app-projects></app-projects>
+	<app-projects></app-projects>
 </div>

@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, HostListener } from '@angular/core';
 import { AppService } from './app.service';
 
 @Component({
@@ -7,6 +7,13 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  showScrollElement:boolean = false;
+
+  @HostListener('window:scroll', ['$event'])
+  scrollEvent(){
+    this.showScrollElement = window.pageYOffset > 500; 
+    console.log(window.pageYOffset);
+  }
 
   constructor(private appService: AppService){}
   

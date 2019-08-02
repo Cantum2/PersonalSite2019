@@ -1,4 +1,4 @@
-<nav class="sticky">
+<nav class="sticky" *ngIf="showScrollElement">
     <div class="nav-wrapper">
             <ul class="right hide-on-med-and-down">
                 <li><a (click)="scrollTo('about')">About</a></li>
@@ -11,5 +11,16 @@
         </ul>
     </div>
 </nav>
+<div class="stickyCredentialLeft" *ngIf="showScrollElement">
+    <div>
+        <a href="https://github.com/Cantum2"><img flex="25" style="height: 50px; width: 50px; " src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+    </div>
+    <div>
+        <a href="https://www.linkedin.com/in/marcus-cantu-a0b569131/"><img flex="25" style="height: 50px; width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
+    </div>
+</div>
+<div class="stickyCredentialRight" *ngIf="showScrollElement">
+    <a href="mailto: cantumarcus19@gmail.com"><p style="writing-mode: vertical-rl; text-orientation: mixed">Testing@gmail.com</p></a>
+</div>
 <app-header #header></app-header>
 <router-outlet></router-outlet>
