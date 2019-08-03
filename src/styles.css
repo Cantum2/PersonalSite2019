@@ -14,3 +14,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 0 6px 0 6px;
     margin: 6px 8px 6px 8px;
 }
+
+.center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.verticalBar {
+    width: 5px; 
+    height: 100px; 
+    background: white; 
+    border: none; 
+    margin-bottom: 0;
+}

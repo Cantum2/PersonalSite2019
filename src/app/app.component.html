@@ -1,4 +1,4 @@
-<nav class="sticky" *ngIf="showScrollElement">
+<!-- <nav class="sticky" *ngIf="showScrollElement">
     <div class="nav-wrapper">
             <ul class="right hide-on-med-and-down">
                 <li><a (click)="scrollTo('about')">About</a></li>
@@ -7,20 +7,23 @@
         <a href="#!" class="brand-logo center">MC</a>
         <ul class="left hide-on-med-and-down">
             <li><a (click)="scrollTo('projects')">Projects</a></li>
-            <!-- <li><a (click)="scrollTo('experience')">Misc</a></li> -->
+            <li><a (click)="scrollTo('experience')">Misc</a></li>
         </ul>
     </div>
-</nav>
+</nav> -->
 <div class="stickyCredentialLeft" *ngIf="showScrollElement">
     <div>
-        <a href="https://github.com/Cantum2"><img flex="25" style="height: 50px; width: 50px; " src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+        <a href="https://github.com/Cantum2"><img flex="25" class="socialLink"  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>
     </div>
     <div>
-        <a href="https://www.linkedin.com/in/marcus-cantu-a0b569131/"><img flex="25" style="height: 50px; width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
+        <a href="https://www.linkedin.com/in/marcus-cantu-a0b569131/"><img flex="25" class="socialLink" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
     </div>
+    <hr class="verticalBar" />
+
 </div>
 <div class="stickyCredentialRight" *ngIf="showScrollElement">
     <a href="mailto: cantumarcus19@gmail.com"><p style="writing-mode: vertical-rl; text-orientation: mixed">Testing@gmail.com</p></a>
+    <hr class="verticalBar" />
 </div>
 <app-header #header></app-header>
 <router-outlet></router-outlet>

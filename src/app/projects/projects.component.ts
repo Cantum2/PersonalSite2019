@@ -51,7 +51,20 @@ export class ProjectsComponent implements OnInit {
   github: 'https://github.com/Cantum2/PersonalSite2019',
   image: '../../assets/img/personalSite.PNG'
   }
-  ]
+  ];
+
+  
+  languages = ['Java', 'TypeScript', 'JavaScript', 'Python', 'HTML', 'CSS', ];
+  frameworks = ['Angular', 'AngularJS', 'ReactJS', 'Spring', 'Android', 'SciPy', 'NodeJS'];
+  databases = ['MySQL', 'NoSQL(Firebase)'];
+  others = ['Git', 'Agile/Scrum', 'Angular Material', 'AWS'];
+
+  skills = [
+    'Java', 'TypeScript', 'JavaScript', 'Python', 'HTML', 'CSS', 
+    'Angular', 'AngularJS', 'ReactJS', 'Spring', 'Android', 'SciPy', 'NodeJS',
+    'MySQL', 'NoSQL(Firebase)',
+    'Git', 'Agile/Scrum', 'Angular Material', 'AWS'
+  ];
   constructor() { }
 
   ngOnInit() {

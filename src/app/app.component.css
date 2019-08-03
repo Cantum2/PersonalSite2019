@@ -23,6 +23,7 @@ body {
   position: fixed;
   z-index: 1000;
   bottom: 0;
+  margin-left: 5px;
 }
 
 .stickyCredentialRight{
@@ -30,4 +31,10 @@ body {
   z-index: 1000;
   bottom: 0;
   right: 0;
+}
+
+.socialLink {
+  height: 35px; 
+  width: 35px;
+  transform:rotate(-90deg);
 }
