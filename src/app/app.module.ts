@@ -12,7 +12,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { ProjectsComponent } from './projects/projects.component';
 import { SingleProjectComponent } from './single-project/single-project.component';
-import { AppService } from './app.service';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { AppService } from './app.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    GoogleChartsModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,

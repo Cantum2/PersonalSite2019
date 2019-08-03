@@ -31,15 +31,3 @@ body {
   bottom: 0;
   right: 0;
 }
-
-.secondaryButton{
-    color: white;
-    background-color: #116466 !important; 
-    border-radius: 3px;
-    font-size: 14px;
-    text-transform: none;
-    text-align: center;
-    min-width: 88px;
-    padding: 0 6px 0 6px;
-    margin: 6px 8px 6px 8px;
-}
