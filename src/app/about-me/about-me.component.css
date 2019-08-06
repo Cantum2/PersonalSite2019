@@ -1,3 +1,27 @@
 .roundedImg {
     border-radius: 50%;
 }
+
+.skills{
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.skills::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: rgb(100, 255, 218);
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.skillsList{
+    display: grid;
+    grid-template-columns: minmax(140px, 200px) minmax(140px, 200px);
+    margin-top: 20px;
+    overflow: hidden;
+    color: white;
+}

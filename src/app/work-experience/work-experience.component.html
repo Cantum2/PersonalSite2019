@@ -1,5 +1,5 @@
 <h1 style="font-size: 70px; margin:0; text-align: center">Experience</h1>
-<mgl-timeline>
+<!-- <mgl-timeline>
     <mgl-timeline-entry *ngFor="let timelineEvent of timelineEvents">
         <mgl-timeline-entry-header>{{timelineEvent.header}}</mgl-timeline-entry-header>
         <mgl-timeline-entry-content>
@@ -10,6 +10,26 @@
         <mgl-timeline-entry-dot></mgl-timeline-entry-dot>
         <mgl-timeline-entry-side>{{timelineEvent.year}}</mgl-timeline-entry-side>
     </mgl-timeline-entry>
-</mgl-timeline>
+</mgl-timeline> -->
+<div class="center" style="margin-top: 20%; height: 400px;">
+    <div style="display: flex">
+        <div flex="20" style="display: flex; justify-content: left; margin-left: 15%;">
+                <ul style="text-align: left;">
+                    <li *ngFor="let timelineEvent of timelineEvents" class="experienceItem" (click)="selected = timelineEvent">
+                        <button mat-button style="border-left: 2px solid rgb(219, 199, 199); border-radius: 0%; color: white; width: 100%; text-align: left;">{{timelineEvent.header}}</button>
+                    </li>
+                </ul>
+        </div>
+        <div flex="70" style="color: white; width: 50%;">
+               {{selected.header}}
+               {{selected.year}}
+               <ul>
+                   <li *ngFor="let contribution of selected.contributions"></li>
+               </ul>
+               {{selected.contributions}}
+        </div>
+    </div>
+</div>
+
 
 <p style="text-align: center;">More adventures to come!</p> 

@@ -26,6 +26,15 @@
     background-size: cover;
 
 }
+.background3 {
+    background-image: url('https://img.culturacolectiva.com/content/2016/05/ideas-cientificas-via-lactea-timelapse.gif');
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 .filter{
     background: rgba(44, 53, 49, .7);

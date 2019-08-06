@@ -1,66 +1,24 @@
 <div style="height: 100%;">
     <h1 style="font-size: 70px; margin:0; text-align: center; color: white;">About Me</h1>
     <div class="center" style="top: 20%;">
-            <figure >
-                <img class="roundedImg" src="../../assets/img/me.png">
-                <figcaption style="color: white; font-size: 1.7vw;">
-                        My name is Marcus Cantu. I am from Laramie, Wyoming 
-                        working towards my Bachelors in Computer Science. Currently my strongest skill set is Full Stack
-                        development most specifically Angular, NodeJS, and Firebase. I am extremely interested in Quantitative 
-                        Finance, Aerospace and Medical Software. Contributing to the future is a huge goal of mine! 
-                </figcaption>
-            </figure>
-        <!-- <div>
-            <h2 style="text-align: center; font-size: 50px; margin-top: 5px; margin-bottom: 5px;">Skills</h2>
-            <mat-accordion #myaccordion="matAccordion" multi="true">
-                <mat-expansion-panel [expanded]="true">
-                    <mat-expansion-panel-header>
-                        <mat-panel-title>
-                            Languages
-                        </mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <mat-chip-list>
-                        <mat-chip *ngFor="let language of languages">{{language}}</mat-chip>
-                    </mat-chip-list>    
-                </mat-expansion-panel>
-                <mat-expansion-panel [expanded]="true">
-                    <mat-expansion-panel-header>
-                        <mat-panel-title>
-                            Frameworks
-                        </mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <mat-chip-list>
-                        <mat-chip *ngFor="let framework of frameworks">{{framework}}</mat-chip>
-                    </mat-chip-list>  
-                </mat-expansion-panel>
-                <mat-expansion-panel [expanded]="true">
-                    <mat-expansion-panel-header>
-                        <mat-panel-title>
-                            Databases
-                        </mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <mat-chip-list>
-                        <mat-chip *ngFor="let database of databases">{{database}}</mat-chip>
-                    </mat-chip-list>   
-                </mat-expansion-panel>
-                <mat-expansion-panel [expanded]="true">
-                    <mat-expansion-panel-header>
-                        <mat-panel-title>
-                            Other Skills
-                        </mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <mat-chip-list>
-                        <mat-chip *ngFor="let other of others">{{other}}</mat-chip>
-                    </mat-chip-list>  
-                </mat-expansion-panel>
-            </mat-accordion>
-
-     
-         
-        </div> -->
+        <figure >
+            <img class="roundedImg" src="../../assets/img/me.png">
+            <figcaption style="color: white; font-size: 1.7vw;">
+                    I currently reside in Laramie, Wyoming and am
+                    working towards my Bachelors degree in Computer Science at the University of Wyoming. My graduation date is May 2020. At the moment, my strongest skill set is Full Stack
+                    development most specifically Angular, NodeJS, and Firebase. I am extremely interested in Quantitative 
+                    Finance, Aerospace and Medical Software. I look forward to collaborating with a team that shares
+                    my same passion for the future of science and technology. 
+            </figcaption>
+        </figure>
     </div>
-    <div class="center" style="top: 25%;">
-        <img height="275px" width="300px" src="https://i.imgur.com/mHdzOYJ.png">
+    <div class="center" style="top: 10%;">
+        <p style="color: white; font-size: 1.25vw;">Highlighted Skills</p>
+        <div style="display: flex; justify-content: center;">
+                <ul class="skillsList">
+                    <li class="skills" *ngFor="let skill of recentTechnoliges">{{skill}}</li>
+                </ul>
+        </div>
     </div>
-
+    <!-- <img height="275px" width="300px" src="https://i.imgur.com/mHdzOYJ.png"> -->
 </div>

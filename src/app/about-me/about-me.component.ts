@@ -8,10 +8,12 @@ import { MatAccordion } from '@angular/material';
 })
 export class AboutMeComponent implements OnInit {
 
-  languages = ['Java', 'TypeScript', 'JavaScript', 'Python', 'HTML', 'CSS', ];
-  frameworks = ['Angular', 'AngularJS', 'ReactJS', 'Spring', 'Android', 'SciPy', 'NodeJS'];
-  databases = ['MySQL', 'NoSQL(Firebase)'];
+  languages = ['Java', 'JavaScript(ES6+)/TypeScript', 'Python', 'HTML & CSS'];
+  frameworks = ['Angular (1-8)','Spring', 'Android', 'SciPy', 'NodeJS'];
+  databases = ['MySQL', 'Firebase'];
   others = ['Git', 'Agile/Scrum', 'Angular Material', 'AWS'];
+  recentTechnoliges = ['Java', 'JavaScript(ES6+)/TypeScript', 'HTML & CSS', 'Angular (1-8)','Spring', 'Android','NodeJS', 'Firebase', 'MySQL' ]
+  allSkills = [...this.languages, ...this.frameworks, ...this.databases, ...this.others];
   panelOpenState = false;
   constructor() { }
 
