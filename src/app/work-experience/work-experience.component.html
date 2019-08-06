@@ -20,13 +20,13 @@
                     </li>
                 </ul>
         </div>
-        <div flex="70" style="color: white; width: 50%;">
-               {{selected.header}}
-               {{selected.year}}
+        <div flex="70" style="margin-left: 5px; color: white; width: 40%;">
+               <p style="text-align: left">{{selected.header}}</p>
+               <p style="text-align: left">{{selected.year}}</p>
                <ul>
-                   <li *ngFor="let contribution of selected.contributions"></li>
+                   <li class="contribution"*ngFor="let contribution of selected.contributions" style="text-align: left">{{contribution}}</li>
                </ul>
-               {{selected.contributions}}
+               <!-- {{selected.contributions}} -->
         </div>
     </div>
 </div>
