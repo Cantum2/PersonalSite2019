@@ -1,24 +1,21 @@
-<div style="height: 100%;">
-    <h1 style="font-size: 70px; margin:0; text-align: center; color: white;">About Me</h1>
-    <div class="center" style="top: 20%;">
-        <figure >
-            <img class="roundedImg" src="../../assets/img/me.png">
-            <figcaption style="color: white; font-size: 1.7vw;">
-                    I currently reside in Laramie, Wyoming and am
-                    working towards my Bachelors degree in Computer Science at the University of Wyoming. My graduation date is May 2020. At the moment, my strongest skill set is Full Stack
-                    development most specifically Angular, NodeJS, and Firebase. I am extremely interested in Quantitative 
-                    Finance, Aerospace and Medical Software. I look forward to collaborating with a team that shares
-                    my same passion for the future of science and technology. 
-            </figcaption>
-        </figure>
+<div>
+    <h1 class="sectionHeader">About Me</h1>
+</div>
+<div style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">
+    <img class="roundedImg" style="height: 200px; width: 200px" src="../../assets/img/me.png">
+    <figcaption style="color: white; font-size: 20px; padding: 10px;">
+            I currently reside in Laramie, Wyoming and am
+            working towards my Bachelors degree in Computer Science at the <a class="externalLink" href="http://www.uwyo.edu/">University of Wyoming</a>. My graduation date is May 2020. At the moment, my strongest skill set is Full Stack
+            development most specifically Angular, NodeJS, and Firebase. I am extremely interested in Quantitative 
+            Finance, Aerospace and Medical Software. I look forward to collaborating with a team that shares
+            my same passion for the future of science and technology. 
+    </figcaption>
+</div>
+<div>
+    <p style="color: white; font-size: 20px; text-align: center; margin: 0;">Here are some highlighted skills:</p>
+    <div style="display: flex; justify-content: center; margin: 0;">
+            <ul class="skillsList">
+                <li class="skills" *ngFor="let skill of recentTechnoliges" style="font-size: 15px;">{{skill}}</li>
+            </ul>
     </div>
-    <div class="center" style="top: 10%;">
-        <p style="color: white; font-size: 1.25vw;">Highlighted Skills</p>
-        <div style="display: flex; justify-content: center;">
-                <ul class="skillsList">
-                    <li class="skills" *ngFor="let skill of recentTechnoliges">{{skill}}</li>
-                </ul>
-        </div>
-    </div>
-    <!-- <img height="275px" width="300px" src="https://i.imgur.com/mHdzOYJ.png"> -->
 </div>

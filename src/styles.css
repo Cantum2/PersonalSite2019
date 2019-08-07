@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /* https://visme.co/blog/website-color-schemes/   16*/
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0; 
+    font-family: RCalibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;; 
+}
 
 .secondaryButton{
     color: white;
@@ -29,4 +32,36 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background: white; 
     border: none; 
     margin-bottom: 0;
+}
+
+.externalLink {
+    color: #d9b08c;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.externalLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.externalLink:hover:after {
+    width: 100%; 
+    left: 0; 
+}
+
+.sectionHeader {
+    font-size: 70px; 
+    margin:0; 
+    text-align: center; 
+    color: #FFCB9A;
 }

@@ -1,18 +1,15 @@
 <div style="margin-top: 5px;">
     <div class="projectWrapper">
         <div [ngClass]="projectInfo.even ? 'projectContentLeft' : 'projectContentRight'">
-            <p style="margin: 0; font-size: 35px;">{{projectInfo.name}}</p>
-            <div  [ngClass]="projectInfo.even ? 'projectDescriptionLeft' : 'projectDescriptionRight'">
-                {{projectInfo.description}}
-            </div>
-            <div style="display:flex; justify-content: space-evenly;">
-                <span *ngIf="!projectInfo.github">
+            <div style="display:flex; align-items: center">
+                <p style="margin: 0; font-size: 35px; color: #d9b08c" [ngClass]="{'marginLeft': projectInfo.even == false}">{{projectInfo.name}}</p>
+                <span *ngIf="!projectInfo.github" class="projectCodeItem">
                     <mat-icon 
                         matTooltip="Code unavailable">
                         block
                     </mat-icon>
                 </span>
-                <span *ngIf="projectInfo.github">
+                <span *ngIf="projectInfo.github" class="projectCodeItem">
                     <a [attr.href]="projectInfo.github">
                         <mat-icon 
                             matTooltip="View Code on Github">
@@ -20,13 +17,20 @@
                         </mat-icon>
                     </a>
                 </span>
-                <a *ngIf="projectInfo.projectLink" [attr.href]="projectInfo.projectLink" >
-                    <mat-icon 
-                        matTooltip="View project">
-                        launch
-                    </mat-icon>
-                </a>
-                <span *ngFor="let technology of projectInfo.technologies">{{technology}}</span>
+                <span *ngIf="projectInfo.projectLink"  class="projectCodeItem">
+                    <a  [attr.href]="projectInfo.projectLink" >
+                        <mat-icon 
+                            matTooltip="View project">
+                            launch
+                        </mat-icon>
+                    </a>
+                </span>
+            </div>
+            <div  [ngClass]="projectInfo.even ? 'projectDescriptionLeft' : 'projectDescriptionRight'" style="max-height: 400px; overflow-y: auto;">
+                {{projectInfo.description}}
+            </div>
+            <div style="display:flex; justify-content: space-evenly;">
+                <span *ngFor="let technology of projectInfo.technologies" style="color: #d9b08c;">{{technology}}</span>
             </div>
         </div>
         <div [ngClass]="projectInfo.even ? 'projectImageLeft':'projectImageRight' ">

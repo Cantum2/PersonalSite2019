@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   scrollEvent(){
-    this.showScrollElement = window.pageYOffset > 500; 
+    this.showScrollElement = window.pageYOffset > 100; 
   }
 
   constructor(private appService: AppService){}

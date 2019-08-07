@@ -27,7 +27,8 @@
 
 }
 .background3 {
-    background-image: url('https://img.culturacolectiva.com/content/2016/05/ideas-cientificas-via-lactea-timelapse.gif');
+    background-color: #116466;
+    /* background-image: url('https://img.culturacolectiva.com/content/2016/05/ideas-cientificas-via-lactea-timelapse.gif'); */
     position: relative;
     background-attachment: fixed;
     background-position: center;

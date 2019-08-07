@@ -1,7 +1,7 @@
-<h1 style="font-size: 70px; margin:0; text-align: center">Projects</h1>
-<div style="max-width: 60%; max-height: 5%;">
-    <!-- <mat-chip-list>
-        <mat-chip *ngFor="let skill of skills">{{skill}}</mat-chip>
-    </mat-chip-list> -->
+<div>
+    <h1 class="sectionHeader">Projects</h1>
+
 </div>
-<app-single-project  *ngFor="let project of projects; let i = index;" [projectInfo]="project" [index]="i"></app-single-project>
+<div style="max-width: 90%; margin-left: 5%;">
+        <app-single-project  *ngFor="let project of projects; let i = index;" [projectInfo]="project" [index]="i"></app-single-project>
+</div>

@@ -19,7 +19,23 @@
     content: "▹";
     position: absolute;
     left: 0px;
-    color: rgb(100, 255, 218);
+    color: #D1E8E2;
     font-size: 14px;
     line-height: 12px;
+}
+
+.jobButton {
+    border-left: 2px solid #d9b08c; 
+    border-radius: 0%;
+    color: white; 
+    width: 100%; 
+    text-align: left;
+}
+
+.jobButton:hover {
+    background-color: #D1E8E2;
+}
+
+.selectedButton {
+    background-color: #d9b08c;
 }

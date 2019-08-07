@@ -1,35 +1,22 @@
-<h1 style="font-size: 70px; margin:0; text-align: center">Experience</h1>
-<!-- <mgl-timeline>
-    <mgl-timeline-entry *ngFor="let timelineEvent of timelineEvents">
-        <mgl-timeline-entry-header>{{timelineEvent.header}}</mgl-timeline-entry-header>
-        <mgl-timeline-entry-content>
-            <div class="angular-with-newlines">
-                    {{timelineEvent.content}}
-            </div>                     
-        </mgl-timeline-entry-content>
-        <mgl-timeline-entry-dot></mgl-timeline-entry-dot>
-        <mgl-timeline-entry-side>{{timelineEvent.year}}</mgl-timeline-entry-side>
-    </mgl-timeline-entry>
-</mgl-timeline> -->
-<div class="center" style="margin-top: 20%; height: 400px;">
+<div>
+    <h1 class="sectionHeader">Experience</h1>
+</div>
+<div style="margin-top: 15px; width: 100%;">
     <div style="display: flex">
-        <div flex="20" style="display: flex; justify-content: left; margin-left: 15%;">
+        <div  style="display: flex; justify-content: left; margin-left: 5%;">
                 <ul style="text-align: left;">
                     <li *ngFor="let timelineEvent of timelineEvents" class="experienceItem" (click)="selected = timelineEvent">
-                        <button mat-button style="border-left: 2px solid rgb(219, 199, 199); border-radius: 0%; color: white; width: 100%; text-align: left;">{{timelineEvent.header}}</button>
+                        <button mat-button class="jobButton" [ngClass]="{'jobButton': true, 'selectedButton': selected.header == timelineEvent.header}">{{timelineEvent.header}}</button>
                     </li>
                 </ul>
         </div>
-        <div flex="70" style="margin-left: 5px; color: white; width: 40%;">
-               <p style="text-align: left">{{selected.header}}</p>
-               <p style="text-align: left">{{selected.year}}</p>
+        <div  style="margin-left: 5px; color: white; margin-right: 5%;">
+               <p style="text-align: left; padding: 0; margin: 0; font-size: 20px;">{{selected.title}}-{{selected.header}}</p>
+               <p style="text-align: left; padding: 0; margin: 0; font-size: 18px;">{{selected.year}}</p>
                <ul>
-                   <li class="contribution"*ngFor="let contribution of selected.contributions" style="text-align: left">{{contribution}}</li>
+                   <li class="contribution"*ngFor="let contribution of selected.contributions" style="text-align: left; font-size: 15px;">{{contribution}}</li>
                </ul>
                <!-- {{selected.contributions}} -->
         </div>
     </div>
 </div>
-
-
-<p style="text-align: center;">More adventures to come!</p> 

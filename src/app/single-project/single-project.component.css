@@ -86,3 +86,13 @@
     width: 100%;
     border-radius: 1%;
 }
+
+.projectCodeItem{
+    position: relative;
+     top: 7px; 
+     margin-left: 5px;
+}
+
+.marginLeft {
+    margin-left: 25px !important;
+}

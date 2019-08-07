@@ -9,6 +9,7 @@ export class WorkExperienceComponent implements OnInit {
   size: number = 40;
   timelineEvents = [
     {header: '3M', 
+    title: 'Software Engineering Intern',
     content: 'Technologies Used: Liquibase, MySQL, Spring, Angular(5,6,7), AWS, Jenkins, Agile/Scrum' + '\n\n' + 'When most people think 3M they think of the tape company. Little do most people know,' +
     ' 3M has an extremely diverse portfolio including a subsidary called 3M Health Information Systems (HIS) which is where interned.' +
     ' While interning at 3M I contributed to a toolset for an NLP engine that parses medical documents and is trained to predict a medical'+
@@ -24,6 +25,7 @@ export class WorkExperienceComponent implements OnInit {
      year: 'May 2019 - August 2019'},
     //  {header: 'University of Wyoming', content: 'Currently attending University of Wyoming majoring in Computer Science. Current GPA: 3.5 ', year: '2019-2020'},
      {header: 'Happy Jack Software',
+     title: 'Junior Software Developer',
      content: 'Technologies Used: Liquibase, MySQL, Spring, AngularJS (1.X)' + '\n\n' + 'I landed my first job in tech as a Junior Software Developer in Laramie, Wyoming.' + 
      ' I made several contributions to the flagship product which is a Electronic Medication Administration Record (eMar),' +
      ' most noteably I introduced a new feature for our customers to generate numerous reports on different aspects of their' +
