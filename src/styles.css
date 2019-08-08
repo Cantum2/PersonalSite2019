@@ -64,4 +64,6 @@ body {
     margin:0; 
     text-align: center; 
     color: #FFCB9A;
+    padding-top: 60px;
+    margin-top: -60px;
 }

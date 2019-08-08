@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild('experience', {static: true}) experience: ElementRef;
   @ViewChild('projects', {static: true}) projects: ElementRef;
 
-  scrollBehavior = { behavior: 'smooth', block: 'nearest' }
+  scrollBehavior = { behavior: 'smooth', block: 'start' }
 
   constructor(private appService: AppService) { 
     this.appService.called.subscribe(()=> {
@@ -45,6 +45,7 @@ export class HeaderComponent implements OnInit {
       default:
         break;
     }
+
   }
 
 }

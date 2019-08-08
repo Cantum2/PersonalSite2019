@@ -13,6 +13,7 @@
     margin-bottom: 10px;
     padding-left: 20px;
     font-size: 13px;
+    z-index: 10;
 }
 
 .contribution::before {
@@ -20,7 +21,7 @@
     position: absolute;
     left: 0px;
     color: #D1E8E2;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 12px;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .jobButton:hover {
-    background-color: #D1E8E2;
+    background-color: #2c3531;
 }
 
 .selectedButton {

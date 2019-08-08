@@ -20,7 +20,7 @@
 
 .skillsList{
     display: grid;
-    grid-template-columns: minmax(140px, 200px) minmax(140px, 200px);
+    grid-template-columns: minmax(150px, 250px) minmax(150px, 250px);
     margin-top: 20px;
     overflow: hidden;
     color: white;
