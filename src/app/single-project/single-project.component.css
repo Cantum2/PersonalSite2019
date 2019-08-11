@@ -1,6 +1,7 @@
 .projectWrapper {
     display: flex; 
     justify-content: center; 
+    /* flex-direction: row; */
     height: 400px; 
     width: 100%;
     max-width: 100%;
@@ -76,6 +77,12 @@
     -webkit-transition: opacity .25s ease-in-out;
 }
 
+.projectName {
+    margin: 0;
+    font-size: 35px; 
+    color: #d9b08c
+}
+
 .projectImageFilter:hover{
     opacity: 1;
     cursor: pointer;
@@ -95,4 +102,56 @@
 
 .marginLeft {
     margin-left: 25px !important;
+}
+
+.projectTechnologies {
+    display:flex; 
+    justify-content: space-evenly;
+}
+
+.projectHeader {
+    display:flex;
+    align-items: center
+}
+
+@media(max-width: 768px){
+    .projectWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;;
+    }
+    [class *= "projectHeader"] {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* left */
+    [class *="projectContentLeft"]{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+
+    .projectImageLeft {
+        order: 2;
+        margin-left: 0;
+        height: auto; 
+        margin-top: 5px;
+    }
+
+    /* right */
+    [class *="projectContentRight"]{
+        width: 100%;
+        max-width: 100%;
+    }
+    .projectImageRight {
+        order: 2;
+        margin-right: 0;
+        height: auto; 
+        margin-top: 5px;
+    }
+
 }

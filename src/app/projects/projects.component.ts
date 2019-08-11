@@ -28,7 +28,7 @@ export class ProjectsComponent implements OnInit {
     github: 'https://github.com/Cantum2/S.E.T.A.',
     image: 'https://imgur.com/HlnARH1.png'
   },
-    {name: 'Tapt (Deprecated)',
+    {name: 'Tapt',
     description: 'A game where the objective is to tap an object that randomly moves around the screen to earn' +
     ' points to spend in the in-game store. Utilizes, fragments, local storage and multithreading.',
     technologies: ['Android'],

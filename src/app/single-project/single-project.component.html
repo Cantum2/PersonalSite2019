@@ -1,44 +1,42 @@
-<div style="margin-top: 5px;">
-    <div class="projectWrapper">
-        <div [ngClass]="projectInfo.even ? 'projectContentLeft' : 'projectContentRight'">
-            <div style="display:flex; align-items: center">
-                <p style="margin: 0; font-size: 35px; color: #d9b08c" [ngClass]="{'marginLeft': projectInfo.even == false}">{{projectInfo.name}}</p>
-                <span *ngIf="!projectInfo.github" class="projectCodeItem">
+<div class="projectWrapper">
+    <div [ngClass]="projectInfo.even ? 'projectContentLeft' : 'projectContentRight'">
+        <div class="projectHeader">
+            <p class="projectName" [ngClass]="{'marginLeft': projectInfo.even == false}">{{projectInfo.name}}</p>
+            <span *ngIf="!projectInfo.github" class="projectCodeItem">
+                <mat-icon 
+                    matTooltip="Code unavailable">
+                    block
+                </mat-icon>
+            </span>
+            <span *ngIf="projectInfo.github" class="projectCodeItem">
+                <a [attr.href]="projectInfo.github">
                     <mat-icon 
-                        matTooltip="Code unavailable">
-                        block
+                        matTooltip="View Code on Github">
+                        code
                     </mat-icon>
-                </span>
-                <span *ngIf="projectInfo.github" class="projectCodeItem">
-                    <a [attr.href]="projectInfo.github">
-                        <mat-icon 
-                            matTooltip="View Code on Github">
-                            code
-                        </mat-icon>
-                    </a>
-                </span>
-                <span *ngIf="projectInfo.projectLink"  class="projectCodeItem">
-                    <a  [attr.href]="projectInfo.projectLink" >
-                        <mat-icon 
-                            matTooltip="View project">
-                            launch
-                        </mat-icon>
-                    </a>
-                </span>
-            </div>
-            <div  [ngClass]="projectInfo.even ? 'projectDescriptionLeft' : 'projectDescriptionRight'" style="max-height: 400px; overflow-y: auto;">
-                {{projectInfo.description}}
-            </div>
-            <div style="display:flex; justify-content: space-evenly;">
-                <span *ngFor="let technology of projectInfo.technologies" style="color: #d9b08c;">{{technology}}</span>
-            </div>
-        </div>
-        <div [ngClass]="projectInfo.even ? 'projectImageLeft':'projectImageRight' ">
-            <div style= "height: 100%;" class="projectImageFilter">
-                <a href="">
-                    <img class="roundedImage" [src]=projectInfo.image>
                 </a>
-            </div>
+            </span>
+            <span *ngIf="projectInfo.projectLink"  class="projectCodeItem">
+                <a  [attr.href]="projectInfo.projectLink" >
+                    <mat-icon 
+                        matTooltip="View project">
+                        launch
+                    </mat-icon>
+                </a>
+            </span>
+        </div>
+        <div  [ngClass]="projectInfo.even ? 'projectDescriptionLeft' : 'projectDescriptionRight'" style="max-height: 400px; overflow-y: auto;">
+            {{projectInfo.description}}
+        </div>
+        <div class="projectTechnologies">
+            <span *ngFor="let technology of projectInfo.technologies" style="color: #d9b08c;">{{technology}}</span>
+        </div>
+    </div>
+    <div [ngClass]="projectInfo.even ? 'projectImageLeft':'projectImageRight' ">
+        <div style="height: 100%;" class="projectImageFilter">
+            <a>
+                <img class="roundedImage" [src]=projectInfo.image>
+            </a>
         </div>
     </div>
 </div>

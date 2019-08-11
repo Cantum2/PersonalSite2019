@@ -1,7 +1,7 @@
-<div>
+<div style="margin-left: 10%; margin-right: 10%;">
     <h1 class="sectionHeader" style="margin: 0;">About Me</h1>
 </div>
-<div style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">
+<div class="aboutWrapper">
     <img class="roundedImg" style="height: 200px; width: 200px" src="https://imgur.com/YMhmkY2.png">
     <figcaption style="color: white; font-size: 20px; padding: 10px;">
             I currently reside in Laramie, Wyoming and am
@@ -12,9 +12,11 @@
             my same passion for the future of science and technology. 
     </figcaption>
 </div>
-<div>
-    <p style="color: white; font-size: 20px; text-align: center; margin: 0;">Here are some highlighted skills:</p>
-    <div style="display: flex; justify-content: center; margin: 0;">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div>
+        <p style="color: white; font-size: 20px; text-align: center; margin: 0; display: block;">Here are some highlighted skills:</p>
+    </div>
+    <div class="skillsListWrapper">
             <ul class="skillsList">
                 <li class="skills" *ngFor="let skill of recentTechnoliges" style="font-size: 15px;">{{skill}}</li>
             </ul>

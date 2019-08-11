@@ -67,3 +67,10 @@ body {
     padding-top: 60px;
     margin-top: -60px;
 }
+
+@media(max-width: 768px){
+    [class *= "sectionHeader"] {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

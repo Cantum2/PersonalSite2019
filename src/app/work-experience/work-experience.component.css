@@ -40,3 +40,57 @@
 .selectedButton {
     background-color: #d9b08c;
 }
+
+.skillContentWrapper {
+    display: flex; 
+    flex-direction: row;
+}
+
+.skillsListWrapper {
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+}
+
+.skillsListWrapper ul {
+    text-align: left;
+    display: inline !important;
+}
+
+.jobDescriptionWrapper {
+    margin-left: 5px; 
+    color: white;
+    margin-right: 5%;
+}
+@media(max-width: 768px) {
+    [class *= "skillContentWrapper"] {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experienceItem{
+        display: inline;
+        list-style-type: none;
+    }
+
+    .skillsListWrapper {
+        display: inline;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .jobButton {
+        border-bottom: 2px solid #d9b08c; 
+        border-radius: 0%;
+        color: white; 
+        text-align: left;
+        width: auto;
+        border-left: none;
+    }
+
+    [class *="jobDescriptionWrapper"] {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

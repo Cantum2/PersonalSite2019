@@ -1,22 +1,21 @@
 <div>
     <h1 class="sectionHeader">Experience</h1>
 </div>
-<div style="margin-top: 15px; width: 100%;">
-    <div style="display: flex">
-        <div  style="display: flex; justify-content: left; margin-left: 5%;">
-                <ul style="text-align: left;">
+<div style="margin-top: 15px; ">
+    <div class="skillContentWrapper">
+        <div class="skillsListWrapper">
+                <ul>
                     <li *ngFor="let timelineEvent of timelineEvents" class="experienceItem" (click)="selected = timelineEvent">
                         <button mat-button class="jobButton" [ngClass]="{'jobButton': true, 'selectedButton': selected.header == timelineEvent.header}">{{timelineEvent.header}}</button>
                     </li>
                 </ul>
         </div>
-        <div  style="margin-left: 5px; color: white; margin-right: 5%;">
+        <div class="jobDescriptionWrapper">
                <p style="text-align: left; padding: 0; margin: 0; font-size: 20px;">{{selected.title}}-{{selected.header}}</p>
                <p style="text-align: left; padding: 0; margin: 0; font-size: 18px;">{{selected.year}}</p>
                <ul>
                    <li class="contribution"*ngFor="let contribution of selected.contributions" style="text-align: left; font-size: 15px;">{{contribution}}</li>
                </ul>
-               <!-- {{selected.contributions}} -->
         </div>
     </div>
 </div>
