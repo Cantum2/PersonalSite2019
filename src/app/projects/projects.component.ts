@@ -43,14 +43,14 @@ export class ProjectsComponent implements OnInit {
     github: 'https://github.com/Cantum2/WyoHack2018',
     image: 'https://imgur.com/cUtt0CB.png'
   },
-  {name: 'This Website',
-  description: 'This project serves as a portfolio for people to get to know me a bit more as a developer and as a person. '+
-  ' It is also my first project utilizing AWS and is stored/hosted in an S3 bucket. Working on Mobile Responsitivity.',
-  technologies: ['Angular 8', 'Angular Material', 'TypeScript'],
-  projectLink: 'http://marcuscantu.com',
-  github: 'https://github.com/Cantum2/PersonalSite2019',
-  image: 'https://imgur.com/8o2jWiY.png'
-  }
+  // {name: 'This Website',
+  // description: 'This project serves as a portfolio for people to get to know me a bit more as a developer and as a person. '+
+  // ' It is also my first project utilizing AWS and is stored/hosted in an S3 bucket. Working on Mobile Responsitivity.',
+  // technologies: ['Angular 8', 'Angular Material', 'TypeScript'],
+  // projectLink: 'http://marcuscantu.com',
+  // github: 'https://github.com/Cantum2/PersonalSite2019',
+  // image: 'https://imgur.com/8o2jWiY.png'
+  // }
   ];
 
   
