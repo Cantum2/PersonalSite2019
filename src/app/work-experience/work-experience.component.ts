@@ -20,7 +20,8 @@ export class WorkExperienceComponent implements OnInit {
       'Refactored an interface, that allows users to search for millions of documents processed by an NLP engine, to increase workflow and increase customer efficiency ',
       'Introduced new functionality for medical coders to compare their correctness across all other medical facilities ',
       'Participated in an Agile Scrum team and collaborated with team members to produce enterprise quality software ',
-      'Optimized the loading of internal functionality resulting in a speed up of over 10 seconds for customers'
+      'Optimized the loading of internal functionality resulting in a speed up of over 10 seconds for customers',
+      'Utilized Jenkins and various AWS services such as CodePipeline, CloudWatch, EC2, and S3 to aid in development'
     ],
      year: 'May 2019 - August 2019'},
     //  {header: 'University of Wyoming', content: 'Currently attending University of Wyoming majoring in Computer Science. Current GPA: 3.5 ', year: '2019-2020'},
