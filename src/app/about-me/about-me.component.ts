@@ -12,7 +12,7 @@ export class AboutMeComponent implements OnInit {
   frameworks = ['Angular (1-8)','Spring', 'Android', 'SciPy', 'NodeJS'];
   databases = ['MySQL', 'Firebase'];
   others = ['Git', 'Agile/Scrum', 'Angular Material', 'AWS'];
-  recentTechnoliges = ['Java', 'JavaScript(ES6+)/TypeScript', 'HTML & CSS', 'Angular (1-8)','Spring', 'Android','NodeJS', 'Firebase', 'MySQL' ]
+  recentTechnoliges = ['Java', 'JavaScript(ES6+)/TypeScript', 'HTML & CSS', 'Angular (1-8)','Spring', 'Android', 'NodeJS', 'Firebase', 'MySQL' ];
   allSkills = [...this.languages, ...this.frameworks, ...this.databases, ...this.others];
   panelOpenState = false;
   constructor() { }

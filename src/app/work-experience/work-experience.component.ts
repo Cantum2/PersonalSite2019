@@ -6,11 +6,37 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work-experience.component.css']
 })
 export class WorkExperienceComponent implements OnInit {
-  size: number = 40;
+  size = 40;
   timelineEvents = [
-    {header: '3M', 
+    {
+      header: '3M - Full Time',
+      title: 'Software Engineer',
+      content: 'I am an incoming full time Software Engineer at 3M. I start in July 2020.',
+    contributions: [
+    'TBA'
+    ],
+      year: 'October 2019 - Present'
+    },
+    {
+      header: 'Imdalo',
+      title: 'CEO',
+      content: 'Developing fitness software to streamline the interaction between personal trainers/gyms and everyday gym goers.' + '\n\n' +
+      ' Imdalo is an up-and-coming platform for personal trainers to be able to deliver more specific workouts/diet regimens to more clients' +
+      ' in less time. For Gyms we provide a tool suite which allows gyms to get analytics on every aspect of their gym. They can also create and manage ' +
+      ' classes, launch retention campaigns, interact with customers and discover new customers. Every day gym users benefit from having extremely fast ' +
+      ' meal/workout logging capabilites as well as analytical tools to find weaknesses in their training to work to improve.',
+    contributions: [
+      'Secured pre-seed funding which allowed me to hire 3 people',
+      'Manage a team of 3 people and oversee business and technical operations',
+      'Develop a business/marketing strategy to increase potential sells',
+      'Write and maintain a code base by utilizing tools such as AWS, Firebase, Flutter and Angular 8'
+      ],
+      year: 'October 2019 - Present'
+    },
+    {header: '3M - Intern',
     title: 'Software Engineering Intern',
-    content: 'Technologies Used: Liquibase, MySQL, Spring, Angular(5,6,7), AWS, Jenkins, Agile/Scrum' + '\n\n' + 'When most people think 3M they think of the tape company. Little do most people know,' +
+    content: 'Technologies Used: Liquibase, MySQL, Spring, Angular(5,6,7), AWS, Jenkins, Agile/Scrum' + '\n\n' +
+    'When most people think 3M they think of the tape company. Little do most people know,' +
     ' 3M has an extremely diverse portfolio including a subsidary called 3M Health Information Systems (HIS) which is where interned.' +
     ' While interning at 3M I contributed to a toolset for an NLP engine that parses medical documents and is trained to predict a medical'+
     ' code. My major contributions include refactoring the interface which allows users to search for medical documents parsed by our AI.' + 
